@@ -20,13 +20,33 @@
             "tsConfig": "tsconfig.app.json",
             "aot": false,
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/assets/css",
+              "src/assets/environments",
+              "src/assets/fonts",
+              "src/assets/images",
+              "src/assets/vendor",
+              "src/assets/js"
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/css/animate.min.css",
+              "src/assets/css/bootstrap-datetimepicker.css",
+              "src/assets/css/bootstrap-select.min.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/flaticon.css",
+              "src/assets/css/font-awesome.min.css",
+              "src/assets/css/normalize.css",
+              "src/assets/css/owl.carousel.css",
+              "src/assets/css/owl.theme.css",
+              "src/assets/css/responsive.css",
+              "src/assets/css/slick.css",
+              "src/assets/css/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/modernizer.js",
+              "src/assets/js/all.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/custom.js"
+            ]
           },
           "configurations": {
             "production": {

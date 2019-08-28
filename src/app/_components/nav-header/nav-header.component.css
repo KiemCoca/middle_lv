@@ -1,0 +1,16 @@
+.main-menu {
+    width: 100%;
+}
+
+ul.nav.navbar-nav.navbar-right {
+    display: flex;
+    flex-direction: inherit;
+}
+
+.navbar-header {
+    position: absolute;
+}
+
+.logo img {
+    max-width: 190px;
+}
