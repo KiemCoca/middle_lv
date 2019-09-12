@@ -45,7 +45,8 @@
               "src/assets/js/modernizer.js",
               "src/assets/js/all.js",
               "src/assets/js/bootstrap.min.js",
-              "src/assets/js/custom.js"
+              "src/assets/js/custom.js",
+              "node_modules/jquery/dist/jquery.min.js"
             ]
           },
           "configurations": {

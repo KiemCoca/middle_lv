@@ -14,3 +14,52 @@ ul.nav.navbar-nav.navbar-right {
 .logo img {
     max-width: 190px;
 }
+
+.navbar-default .navbar-nav>.open>a {
+    background-color: transparent;
+}
+
+.dropdown-menu{
+    background-color: transparent;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    font-weight: bold;
+}
+
+.dropdown-menu.dropdown-menu-right {
+    background-color: transparent;
+    position: absolute;
+    top: 100%;
+    left: -120px;
+    z-index: 1000;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    text-align: left;
+    list-style: none;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+
+a.dropdown-item {
+    margin: 0;
+    padding-left: 20px !important;
+    background-color: white;
+    color: black !important;
+}
+
+h4.modal-title{
+    position: absolute;
+}
+
+.modal-dialog {
+    top: 30%;
+}
+
+.content-modal{
+    text-align: center;
+}
