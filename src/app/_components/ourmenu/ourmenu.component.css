@@ -1,0 +1,13 @@
+.slider.slider-nav {
+    height: 147px;
+}
+
+.slider .tab-title-menu {
+    width: 25%;
+    float: left;
+    /* padding: 20px 0; */
+}
+
+.slider.slider-single {
+    min-height: 970px;
+}

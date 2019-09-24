@@ -16,14 +16,11 @@ export class NavHeaderComponent {
     private authenticationService: AuthenticationService
   ) {
     this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
+    console.log(this.currentUser);
   }
 
   logout() {
     this.authenticationService.logout();
     this.router.navigate(['/login']);
-  }
-
-  showAgentDetailPopup() {
-    alert(123);
   }
 }

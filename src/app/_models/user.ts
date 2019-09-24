@@ -11,4 +11,5 @@ export class User {
     sex: string;
     token: string;
     colorthame: string;
+    type: number
 }

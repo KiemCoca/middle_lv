@@ -63,3 +63,11 @@ h4.modal-title{
 .content-modal{
     text-align: center;
 }
+
+.img-avatar-user{
+    width: 100%;
+}
+
+.banner-text h2.modal-title {
+    width: calc(100% - 32px);
+}

@@ -49,16 +49,4 @@ export class HomeComponent implements OnInit {
       localStorage.setItem('currentUser', JSON.stringify(this.currentUser));
     });
   }
-
-  deleteUser(id: number) {
-    this.userService.delete(id).pipe(first()).subscribe(() => {
-      this.loadAllUsers()
-    });
-  }
-
-  private loadAllUsers() {
-    this.userService.getAll().pipe(first()).subscribe(users => {
-      this.users = users;
-    });
-  }
 }
