@@ -20,7 +20,6 @@ export class OurTeamComponent implements OnInit {
   private loadTeamData() {
     this.summaryS.getTeams().pipe(first()).subscribe(data => {
       this.ourTeams = data;
-      console.log(data);
     });
   }
 
