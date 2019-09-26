@@ -14,63 +14,22 @@
                 <div class="team-box">
 
                     <div class="row">
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-md-4 col-sm-6" *ngFor="let item of ourTeams">
                             <div class="sf-team">
                                 <div class="thumb">
-                                    <a href="#"><img src="../../../assets/images/staff-01.jpg" alt=""></a>
+                                    <a href="#"><img [src]="item.Avartar" alt=""></a>
                                 </div>
                                 <div class="text-col">
-                                    <h3>John Doggett</h3>
-                                    <p>Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed
-                                        fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo
-                                        ligula.</p>
+                                    <h3 [innerHTML]="item.Name">John Doggett</h3>
+                                    <p [innerHTML]="item.Summary"></p>
                                     <ul class="team-social">
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a target="_blank" [href]="item.linkFb"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a target="_blank" [href]="item.linkTw"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a target="_blank" [href]="item.linkIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <!-- end col -->
-                        <div class="col-md-4 col-sm-6">
-                            <div class="sf-team">
-                                <div class="thumb">
-                                    <a href="#"><img src="../../../assets/images/staff-02.jpg" alt=""></a>
-                                </div>
-                                <div class="text-col">
-                                    <h3>Jeffrey Spender</h3>
-                                    <p>Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed
-                                        fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo
-                                        ligula.</p>
-                                    <ul class="team-social">
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end col -->
-                        <div class="col-md-4 col-sm-6">
-                            <div class="sf-team">
-                                <div class="thumb">
-                                    <a href="#"><img src="../../../assets/images/staff-03.jpg" alt=""></a>
-                                </div>
-                                <div class="text-col">
-                                    <h3>Monica Reyes</h3>
-                                    <p>Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed
-                                        fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo
-                                        ligula.</p>
-                                    <ul class="team-social">
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end col -->
                     </div>
                     <!-- end row -->
 

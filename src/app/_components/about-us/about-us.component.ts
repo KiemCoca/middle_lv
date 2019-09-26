@@ -22,7 +22,6 @@ export class AboutUsComponent implements OnInit {
   private loadAboutUs() {
     this.summaryS.getAboutUs().pipe(first()).subscribe(data => {
       this.aboutUsData = data;
-      console.log(data);
     });
   }
 }

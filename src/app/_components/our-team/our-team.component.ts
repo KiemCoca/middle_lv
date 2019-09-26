@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SummaryService } from 'src/app/_services/sumary.service';
+import { first } from 'rxjs/operators';
 
 @Component({
   selector: 'app-our-team',
@@ -6,10 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./our-team.component.css']
 })
 export class OurTeamComponent implements OnInit {
-
-  constructor() { }
+  ourTeams: any;
+  constructor(
+    private summaryS: SummaryService
+  ) {  }
 
   ngOnInit() {
+    this.loadTeamData();
+  }
+
+  private loadTeamData() {
+    this.summaryS.getTeams().pipe(first()).subscribe(data => {
+      this.ourTeams = data;
+      console.log(data);
+    });
   }
 
 }

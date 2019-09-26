@@ -22,7 +22,6 @@ export class SpecialMenuComponent implements OnInit {
   private loadSpecialMenu() {
     this.summaryS.getSpecialMenu().pipe(first()).subscribe(data => {
       this.specialMenu = data;
-      console.log(data)
     });
   }
 }

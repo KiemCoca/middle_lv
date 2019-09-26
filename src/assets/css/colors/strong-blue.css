@@ -151,3 +151,8 @@
 #color-panel a.panel-button:hover{
 	color: #1E69B8;		
 }
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #1E69B8;
+  }
