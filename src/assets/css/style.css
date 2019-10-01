@@ -285,7 +285,6 @@ html, body{ height: 100%; }
 	background-color:transparent;
 }
 .main-menu .navbar{
-	min-height:inherit;
 	border-radius:0px;
 	border:none;
 	margin:0px;
@@ -766,7 +765,6 @@ html, body{ height: 100%; }
 	position:absolute;
 	height:100%;
 	width:100%;
-	background:rgba(231, 91, 30, 0.5);
 	top:0px;
 	left:0px;
 }
@@ -1074,7 +1072,6 @@ html, body{ height: 100%; }
 	content:"\e003";
 	font-family: 'Glyphicons Halflings';
 	opacity: 0;
-	background-color: rgba(231, 91, 30, 0.75);
 	position: absolute;
 	right: 3px;
 	left: 3px;
@@ -1129,7 +1126,7 @@ html, body{ height: 100%; }
 .gal-container .description{
 	position: relative;
 	height: 40px;
-	top: -40px;
+	top: -0;
 	padding: 10px 25px;
 	background-color: rgba(0,0,0,0.5);
 	color: #fff;
@@ -1374,28 +1371,16 @@ html, body{ height: 100%; }
 	font-size: 42px;
 }
 
-.panel-body  p strong span{
-	color: #e75b1e;
-}
-.panel-pricing{
-	border:1px solid #e75b1e;
-}
-.panel-pricing .panel-heading{
-	background: #e75b1e;
-}
 .pricing-main .panel-footer .btn-block{
 	border-radius:0px;
 }
 .pricing-main .panel-footer a{
-	background: #e75b1e;
-	border: 3px solid #e75b1e;
 	color:#fff;
 	padding: 14px 16px;
 }
 .pricing-main .panel-footer a:hover{
 	background:none;
 	color:#202020;
-	border: 3px solid red;
 }
 
 .panel-pricing{

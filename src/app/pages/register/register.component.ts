@@ -44,7 +44,7 @@ export class RegisterComponent implements OnInit {
         }
 
         this.loading = true;
-        this.userService.register(this.registerForm.value)
+        this.authenticationService.register(this.registerForm.value)
             .pipe(first())
             .subscribe(
                 data => {
@@ -52,7 +52,7 @@ export class RegisterComponent implements OnInit {
                     this.router.navigate(['/login']);
                 },
                 error => {
-                    alert(error);
+                    alert("User đã tồn tại, Vui lòng đăng ký tài khoản khác");
                     this.loading = false;
                 });
     }

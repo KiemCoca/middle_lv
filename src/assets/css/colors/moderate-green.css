@@ -146,9 +146,14 @@
 }
 
 .copyright-main{
-	background: #e75b1e;
+	background: #8dc63f;
 }
 
 #color-panel a.panel-button:hover{
 	color: #8dc63f;		
 }
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #8dc63f;
+  }

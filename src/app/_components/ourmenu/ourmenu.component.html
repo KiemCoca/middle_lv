@@ -1,0 +1,45 @@
+<div id="menu" class="menu-main pad-top-100 pad-bottom-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                    <h2 class="block-title text-center">
+                        Our Menu
+                    </h2>
+                    <p class="title-caption text-center">There are many variations of passages of Lorem Ipsum available,
+                        but the majority have suffered alteration in some form, by injected humour, or randomised words
+                        which don't look even slightly believable. </p>
+                </div>
+                <div class="tab-menu">
+                    <div class="slider slider-nav">
+                        <div class="tab-title-menu" [ngClass]="{'is-active': categoryName.trim() == item.Name.trim()}"
+                            *ngFor="let item of categoryMenu" (click)="changeTabMenu(item.Name)">
+                            <h2 [innerHtml]="item.Name"></h2>
+                            <p [innerHTML]="item.icon"></p>
+                        </div>
+                    </div>
+                    <div class="slider slider-single">
+                        <div class="loader" *ngIf="loading"></div>
+                        <div *ngIf="!loading">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" *ngFor="let item of ourMenu">
+                                <div class="offer-item">
+                                    <img [src]="item.Images" alt="Hình lỗi" class="img-responsive"
+                                        [style.height.px]="100">
+                                    <div>
+                                        <h3 [innerHTML]="item.Title"></h3>
+                                        <p [innerHTML]="item.Summary"></p>
+                                    </div>
+                                    <span class="offer-price" [innerHTML]="item.price"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end tab-menu -->
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container -->
+</div>

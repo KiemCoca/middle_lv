@@ -1,0 +1,30 @@
+.slider.slider-nav {
+    height: 147px;
+}
+
+.slider .tab-title-menu {
+    width: 25%;
+    float: left;
+    /* padding: 20px 0; */
+}
+
+.slider.slider-single {
+    min-height: 400px;
+}
+
+.tab-title-menu {
+    cursor: pointer;
+}
+
+.loader {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 50px 0 50px 45%;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

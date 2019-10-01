@@ -53,7 +53,7 @@ export class LoginComponent implements OnInit {
                     this.router.navigate([this.returnUrl]);
                 },
                 error => {
-                  alert(error);
+                    alert('Sai tên đăng nhập hoặc mật khẩu, Vui lòng thử lại.');
                     this.loading = false;
                 });
     }

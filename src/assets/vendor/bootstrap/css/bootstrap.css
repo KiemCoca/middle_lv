@@ -2546,7 +2546,7 @@ tbody.collapse.show {
   display: inline-block;
   width: 0;
   height: 0;
-  margin-left: 0.255em;
+  margin-left: -0.745em !important;
   vertical-align: 0.255em;
   content: "";
   border-top: 0.3em solid;
